@@ -47,7 +47,7 @@ def render():
             level_icons = {"Beginner":"🟢","Intermediate":"🟡","Advanced":"🔴"}
             for _, row in recs.iterrows():
                 st.markdown(f"""
-                <div class="rec-card" style="border-left:4px solid {color};">
+                <div class="rec-card" style="border-left:4px solid {color};background:white;color:#333;">
                 <div style="display:flex;justify-content:space-between;align-items:center;">
                     <b>{row['CourseName']}</b>
                     <span>⭐ {row['CourseRating']:.2f} &nbsp; 💰 ${row['CoursePrice']:.0f}</span>
